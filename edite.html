@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的歌单-编辑</title>
+</head>
+
+<body>
+    <form action="/edite" method="POST">
+        <p>
+            <label for="">编号：</label>
+            <input name="id" type="text" value="<%= item.id %>">
+        </p>
+        <p>
+            <label for="">名称：</label>
+            <input name="name" type="text" value="<%= item.name %>">
+        </p>
+        <p>
+            <label for="">歌手：</label>
+            <input name="singer" type="text" value="<%= item.singer %>">
+        </p>
+        <p>
+            <label for="">高码率</label>
+            <% if(item.isHighRate) { %>
+                <input name="isHighRate" type="radio" value="1" checked>是
+                <input name="isHighRate" type="radio" value="0">否
+            <% }else { %>
+            	<input name="isHighRate" type="radio" value="1">是
+                <input name="isHighRate" type="radio" value="0" checked>否
+            <% } %>
+        </p>
+        <p>
+            <input type="submit" value="点击修改" />
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的歌单-添加歌曲</title>
+</head>
+
+<body>
+    <form action="/add" method="POST">
+        <p>
+            <label for="">编号：</label>
+            <input name="id" type="text">
+        </p>
+        <p>
+            <label for="">名称：</label>
+            <input name="name" type="text">
+        </p>
+        <p>
+            <label for="">歌手：</label>
+            <input name="singer" type="text">
+        </p>
+        <p>
+            <label for="">高码率</label>
+            <input name="isHighRate" type="radio" value="1">是
+            <input name="isHighRate" type="radio" value="0">否
+        </p>
+        <p>
+            <input type="submit" value="点击添加" />
+        </p>
+    </form>
+</body>
+
+</html>

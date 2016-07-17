@@ -1,0 +1,22 @@
+{
+  "name": "melon-music",
+  "description": "我的音乐列表",
+  "main": "index.js",
+  "authors": [
+    "melon <804575781@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/vender",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
